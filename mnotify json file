@@ -1,0 +1,70 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Mnotify",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "apps.mnotify.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/smsapi": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Send SMS",
+        "description": "This connector allows you to send sms messages via Mnotify",
+        "operationId": "Send",
+        "parameters": [
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "BP5BykdkH83M4v2ZD7HnRchRV"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "msg",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "sender_id",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "MICTS"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "security": [],
+  "tags": []
+}
