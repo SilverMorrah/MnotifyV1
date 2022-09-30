@@ -1,5 +1,5 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+MNOTIFY: This project is basically for Power Platform Mnotify custom connector. It allows you to easily run mnotify service in your PowerApps without the need of using Power automate.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
